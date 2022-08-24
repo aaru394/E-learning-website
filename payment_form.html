@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT FORM</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin: 15px;
+            font-size: 16px;
+            padding: 10px;
+        }
+        form{
+           background-color:azure; 
+           border: 12px solid lightgreen;
+           border-radius: 5px;
+           padding: 10px;
+        }
+        .main_heading{
+            text-align: center;
+            text-decoration: underline;
+        }
+        input[type="text"],input[type="email"],input[type="date"],textarea,select{
+            width: 100%;
+            padding: 10px;
+        }
+        fieldset{
+            border: 10px solid ;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        input[type="submit"]{
+            background-color:rgba(0, 255, 221, 0.658);
+            border-radius: 6px;
+            padding: 11px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover{
+            background-color: fuchsia;
+        }
+    </style>
+    
+    
+</head>
+<body>
+    <form action="">
+        <h1 class="main_heading"> Payment form</h1><hr>
+        <h2>Contact Information</h2>
+        <p> Name: <input type="text" name="name" required placeholder="ARYAN KOUL"></p>
+        <fieldset>
+            <legend>GENDER</legend>
+        <p>
+            Male <input type="radio" name="Gender" id="Male">
+            Female <input type="radio" name="Gender" id="Female">
+            Transgender <input type="radio" name="Gender" id="Transgender">
+        </p>
+        </fieldset>
+        <p>Address: <textarea name="Address" id="Address" cols="100" rows="6" placeholder="Enter your address"></textarea></p>
+        <p>E-mail: <input type="email" name="email" id="email" required placeholder="enter email"></p>
+        <p>Pin: <input type="number" name="number" id="" required></p>
+        <hr>
+        <h2>Payment Details</h2>
+        <p>Card type: <select name="card_type" id="card_type">
+        <option value="">----Select card type-----</option>
+        <option value="MasterCard">Debit Card</option>
+        <option value="Visa">VISA</option>
+        <option value="Rupay">Rupay</option>
+        </select>
+        </p>
+        <p>Card Number: <input type="number" name="number" id="number" required placeholder="xxxx-xxxx-xxxx-xxxx"></p>
+        <p>Expiration Date: <input type="date" name="date" id="date" required></p>
+        <p>CVV: <input type="password" name="password" id="password" placeholder="enter cvv behind your debit card. "></p>
+        <input type="submit" value="PAY NOW">
+
+
+    </form>
+</body>
+</html>
